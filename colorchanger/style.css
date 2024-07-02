@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+}
+
+.fr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.cont {
+    height: 100px;
+    width: 100px;
+}
+
+.cont:nth-child(1){
+    background-color: aqua;
+}
+.cont:nth-child(2){
+    background-color: blue;
+}
+.cont:nth-child(3){
+    background-color: yellowgreen;
+}
+.cont:nth-child(4){
+    background-color: violet;
+}

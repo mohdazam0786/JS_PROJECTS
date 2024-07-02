@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="fr">
+        <div class="cont" id="aqua"></div>
+        <div class="cont" id="blue"></div>
+        <div class="cont" id="yellowgreen"></div>
+        <div class="cont" id="violet"></div>
+    </div>
+    <script>
+        const Body = document.querySelector('body')
+        const Cont = document.querySelectorAll('.cont')
+        Cont.forEach(function(cont) {
+            console.log(cont)
+            cont.addEventListener('click', function(e){
+                console.log(e)
+                console.log(e.target)
+                if(e.target.id==='aqua')
+                {
+                    Body.style.backgroundColor = e.target.id;
+                }
+                if(e.target.id==='blue')
+                {
+                    Body.style.backgroundColor = e.target.id;
+                }
+                if(e.target.id==='yellowgreen')
+                {
+                    Body.style.backgroundColor = e.target.id;
+                }
+                if(e.target.id==='violet')
+                {
+                    Body.style.backgroundColor = e.target.id;
+                }
+            })
+        })
+    </script>
+</body>
+</html>
